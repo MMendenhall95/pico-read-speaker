@@ -3,15 +3,14 @@
 #Transform text in wav audio
 #exec : text2wav.py
 
-import os, sys, getopt
-
-reload(sys)
-sys.setdefaultencoding('utf8')
+import os
+import sys
+import getopt
 
 #limit char of pico2wave
-limit_char = 30000
+limit_char = 300000
 #choose default language between: 'en-US','en-GB','de-DE','es-ES','fr-FR','it-IT'
-default_lang = 'en-GB'
+default_lang = 'en-US'
 
 #get text from file
 def text_file(arg):
@@ -124,3 +123,4 @@ def main(argv):
 
 if __name__ == "__main__":
     main(sys.argv[1:])
+
